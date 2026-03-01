@@ -77,14 +77,14 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 
+python main.py
+
 ## Suggested Requirements:
 - glfw
 - PyOpenGL
 - imgui
 - pillow
 - numpy
-
-python main.py
 
 ## 🎮 Controls (Quick)
 
