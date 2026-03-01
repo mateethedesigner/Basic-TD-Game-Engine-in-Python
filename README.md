@@ -1,280 +1,216 @@
-<div align="center">
-
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>TD Game Engine in Python</h1>
-  
-  <p>
-    A TD game engine built using python with basic functions and templates.
-  </p>
-  
-   
-<h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
-  </h4>
-</div>
-
-<br />
-
-<!-- Table of Contents -->
-# :notebook_with_decorative_cover: Table of Contents
-
-- [About the Project](#star2-about-the-project)
-  * [Screenshots](#camera-screenshots)
-  * [Tech Stack](#space_invader-tech-stack)
-  * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
-  * [Environment Variables](#key-environment-variables)
-- [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
-
-  
-
-<!-- About the Project -->
-## :star2: About the Project
-
-
-<!-- Screenshots -->
-### :camera: Screenshots
-
-<div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
-</div>
-
-
-<!-- TechStack -->
-### :space_invader: Tech Stack
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
-  </ul>
-</details>
+# TEST-ENGINE — TD Engine + Editor (Python + ImGui)
+
+A lightweight **2D Tower Defense engine/editor** written in Python using **ImGui** for tools/UI and **OpenGL** for rendering.  
+Goal: fast level editing, pathfinding testing, tower/enemy logic, wave system — then gradually evolve into a more “engine-like” toolchain.
+
+---
+
+## ✨ Features
+
+### 🧱 Editor
+- Grid-based level editor (**Paint mode**)
+- Brushes: **Wall / Path / Tower / Erase / Start / End**
+- **Placement preview + ghost tower** (green/red validity + range preview)
+- **Path Tool mode**: create paths from waypoints (A* between waypoints)
+  - **LMB**: add waypoint  
+  - **Backspace**: remove last waypoint  
+  - **Enter**: apply path  
+  - **Esc**: clear tool
+
+### 🧠 Pathfinding
+- A* pathfinding from Start → End
+- Computed path overlay visualization
+
+### 🏰 Towers
+- Tower placement with path-block prevention
+- Tower range shown as a real **radius circle**
+- Upgrade / Sell
+- Target modes:
+  - **First / Last / Closest / Strongest**
+
+### 🌊 Waves + Enemies
+- Wave editor: type, count, interval
+- Enemy types: normal / fast / tank
+- HP bars, rewards, lives system
+
+### ⏱️ Time Controls
+- Pause / Play / Step
+- Time scale: x1 / x2 / x4 + slider
+
+### 🖥️ Console + Logging
+- **F5**: in-engine console
+- DEBUG/INFO/WARN/ERROR filters
+- Command history (↑ / ↓)
+- `save_log` to file
+
+### 🎨 Textures / Sprites
+- Tileset + enemy + tower sprite support (PNG)
+- If assets are missing: auto-generated **placeholder textures**
+
+---
+
+## 📁 Project Structure
+# TEST-ENGINE — TD Engine + Editor (Python + ImGui)
 
-<!-- Features -->
-### :dart: Features
+A lightweight **2D Tower Defense engine/editor** written in Python using **ImGui** for tools/UI and **OpenGL** for rendering.  
+Goal: fast level editing, pathfinding testing, tower/enemy logic, wave system — then gradually evolve into a more “engine-like” toolchain.
 
-- Feature 1
-- Feature 2
-- Feature 3
+---
 
-<!-- Color Reference -->
-### :art: Color Reference
+## ✨ Features
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
+### 🧱 Editor
+- Grid-based level editor (**Paint mode**)
+- Brushes: **Wall / Path / Tower / Erase / Start / End**
+- **Placement preview + ghost tower** (green/red validity + range preview)
+- **Path Tool mode**: create paths from waypoints (A* between waypoints)
+  - **LMB**: add waypoint  
+  - **Backspace**: remove last waypoint  
+  - **Enter**: apply path  
+  - **Esc**: clear tool
 
+### 🧠 Pathfinding
+- A* pathfinding from Start → End
+- Computed path overlay visualization
 
-<!-- Env Variables -->
-### :key: Environment Variables
+### 🏰 Towers
+- Tower placement with path-block prevention
+- Tower range shown as a real **radius circle**
+- Upgrade / Sell
+- Target modes:
+  - **First / Last / Closest / Strongest**
 
-To run this project, you will need to add the following environment variables to your .env file
+### 🌊 Waves + Enemies
+- Wave editor: type, count, interval
+- Enemy types: normal / fast / tank
+- HP bars, rewards, lives system
 
-`API_KEY`
+### ⏱️ Time Controls
+- Pause / Play / Step
+- Time scale: x1 / x2 / x4 + slider
 
-`ANOTHER_API_KEY`
+### 🖥️ Console + Logging
+- **F5**: in-engine console
+- DEBUG/INFO/WARN/ERROR filters
+- Command history (↑ / ↓)
+- `save_log` to file
 
-<!-- Getting Started -->
-## 	:toolbox: Getting Started
+### 🎨 Textures / Sprites
+- Tileset + enemy + tower sprite support (PNG)
+- If assets are missing: auto-generated **placeholder textures**
 
-<!-- Prerequisites -->
-### :bangbang: Prerequisites
+---
 
-This project uses Yarn as package manager
+## 📁 Project Structure
+ - TEST-ENGINE/
+ - assets/
+ - tiles.png # optional (placeholder used if missing)
+ - enemy.png # optional (placeholder used if missing)
+ - tower.png # optional (placeholder used if missing)
+ - main.py
+ - requirements.txt
+ - README.md
 
-```bash
- npm install --global yarn
-```
+---
 
-<!-- Installation -->
-### :gear: Installation
+## ✅ Requirements
+- Recommended: **Python 3.13**
+  - (Python 3.14 pre-release can break some packages.)
+- Windows / Linux / macOS
 
-Install my-project with npm
+---
 
-```bash
-  yarn install my-project
-  cd my-project
-```
-   
-<!-- Running Tests -->
-### :test_tube: Running Tests
+## ⚙️ Installation
 
-To run tests, run the following command
+### 1) Create a virtual environment
+**Windows PowerShell**
+```powershell
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
 
-```bash
-  yarn test test
-```
+Suggested requirements.txt:
 
-<!-- Run Locally -->
-### :running: Run Locally
+glfw
+PyOpenGL
+imgui
+pillow
+numpy
 
-Clone the project
+python main.py
 
-```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
-```
+🎮 Controls (Quick)
 
-Go to the project directory
+LMB: paint / waypoint (in Path Tool mode)
 
-```bash
-  cd my-project
-```
+RMB: select tower
 
-Install dependencies
+F5: toggle console
 
-```bash
-  yarn install
-```
+Space: pause/play
 
-Start the server
+Path Tool: Backspace (pop), Enter (apply), Esc (clear)
 
-```bash
-  yarn start
-```
+🧩 Assets (Optional)
+Tileset (assets/tiles.png)
 
+A single row with 6 tiles in this order:
+EMPTY, WALL, PATH, TOWER, START, END
 
-<!-- Deployment -->
-### :triangular_flag_on_post: Deployment
+Recommended tile size: 16×16 or 32×32 (any size works; it will be scaled)
 
-To deploy this project run
+Enemy (assets/enemy.png) + Tower (assets/tower.png)
 
-```bash
-  yarn deploy
-```
+Any square PNG works (e.g. 16×16, 32×32)
 
+If you don’t provide any PNGs, the engine generates placeholder textures automatically.
 
-<!-- Usage -->
-## :eyes: Usage
+🧪 Console Commands (Examples)
 
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
+help
 
+wave start / wave stop
 
-```javascript
-import Component from 'my-project'
+spawn normal|fast|tank
 
-function App() {
-  return <Component />
-}
-```
+save map.json / load map.json
 
-<!-- Roadmap -->
-## :compass: Roadmap
+save_log log.txt
 
-* [x] Todo 1
-* [ ] Todo 2
+time pause|play|step
 
+time scale 2
 
-<!-- Contributing -->
-## :wave: Contributing
+render textures on|off
 
-<a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
-</a>
+render grid on|off
 
+mode paint|path
 
-Contributions are always welcome!
+path clear_existing on|off
 
-See `contributing.md` for ways to get started.
+path apply
 
+path clear
 
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
+🗺️ Roadmap (Ideas)
 
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
+Undo/Redo (Ctrl+Z / Ctrl+Y)
 
-<!-- FAQ -->
-## :grey_question: FAQ
+Sprite atlas animation (enemy 1×4 frames)
 
-- Question 1
+Projectile types: splash/slow/poison
 
-  + Answer 1
+Better placement tooltip (“why invalid”)
 
-- Question 2
+Expanded tower inspector (DPS, range preview always-on)
 
-  + Answer 2
+Scene system + prefabs
 
+📜 License
 
-<!-- License -->
-## :warning: License
+Not set yet. Recommended:
 
-Distributed under the no License. See LICENSE.txt for more information.
+MIT License (simple and permissive)
 
-
-<!-- Contact -->
-## :handshake: Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/Louis3797/awesome-readme-template](https://github.com/Louis3797/awesome-readme-template)
-
-
-<!-- Acknowledgments -->
-## :gem: Acknowledgements
-
-Use this section to mention useful resources and libraries that you have used in your projects.
-
- - [Shields.io](https://shields.io/)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
- - [Readme Template](https://github.com/othneildrew/Best-README-Template)
-
-
+or GPL (keeps derivatives open-source)
