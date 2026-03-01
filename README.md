@@ -1,10 +1,10 @@
 <div align="center">
 
   <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <h1>TD Game Engine in Python</h1>
   
   <p>
-    An awesome README template for your projects! 
+    A TD game engine built using python with basic functions and templates.
   </p>
   
   
