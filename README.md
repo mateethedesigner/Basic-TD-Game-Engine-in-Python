@@ -88,15 +88,15 @@ python main.py - Start the project
 
 ## 🎮 Controls (Quick)
 
-LMB: paint / waypoint (in Path Tool mode)
+- LMB: paint / waypoint (in Path Tool mode)
 
-RMB: select tower
+- RMB: select tower
 
-F5: toggle console
+- F5: toggle console
 
-Space: pause/play
+- Space: pause/play
 
-Path Tool: Backspace (pop), Enter (apply), Esc (clear)
+- Path Tool: Backspace (pop), Enter (apply), Esc (clear)
 
 🧩 Assets (Optional)
 Tileset (assets/tiles.png)
