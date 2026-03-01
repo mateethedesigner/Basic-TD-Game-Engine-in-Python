@@ -72,22 +72,21 @@ Goal: fast level editing, pathfinding testing, tower/enemy logic, wave system �
 
 ### 1) Create a virtual environment
 **Windows PowerShell**
-```powershell
+powershell
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 
-Suggested requirements.txt:
-
-glfw
-PyOpenGL
-imgui
-pillow
-numpy
+## Suggested Requirements:
+- glfw
+- PyOpenGL
+- imgui
+- pillow
+- numpy
 
 python main.py
 
-🎮 Controls (Quick)
+## 🎮 Controls (Quick)
 
 LMB: paint / waypoint (in Path Tool mode)
 
