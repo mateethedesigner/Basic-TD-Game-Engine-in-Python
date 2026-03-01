@@ -98,7 +98,8 @@ python main.py - Start the project
 
 - Path Tool: Backspace (pop), Enter (apply), Esc (clear)
 
-🧩 Assets (Optional)
+## 🧩 Assets (Optional)
+
 Tileset (assets/tiles.png)
 
 A single row with 6 tiles in this order:
@@ -112,52 +113,49 @@ Any square PNG works (e.g. 16×16, 32×32)
 
 If you don’t provide any PNGs, the engine generates placeholder textures automatically.
 
-🧪 Console Commands (Examples)
 
-help
+## 🧪 Console Commands (Examples)
 
-wave start / wave stop
+- help
 
-spawn normal|fast|tank
+- wave start / wave stop
 
-save map.json / load map.json
+- spawn normal|fast|tank
 
-save_log log.txt
+- save map.json / load map.json
 
-time pause|play|step
+- save_log log.txt
 
-time scale 2
+- time pause|play|step
 
-render textures on|off
+- time scale 2
 
-render grid on|off
+- render textures on|off
 
-mode paint|path
+- render grid on|off
 
-path clear_existing on|off
+- mode paint|path
 
-path apply
+- path clear_existing on|off
 
-path clear
+- path apply
 
-🗺️ Roadmap (Ideas)
+- path clear
 
-Undo/Redo (Ctrl+Z / Ctrl+Y)
+## 🗺️ Roadmap
 
-Sprite atlas animation (enemy 1×4 frames)
+- Undo/Redo (Ctrl+Z / Ctrl+Y)
 
-Projectile types: splash/slow/poison
+- Sprite atlas animation (enemy 1×4 frames)
 
-Better placement tooltip (“why invalid”)
+- Projectile types: splash/slow/poison
 
-Expanded tower inspector (DPS, range preview always-on)
+- Better placement tooltip (“why invalid”)
 
-Scene system + prefabs
+- Expanded tower inspector (DPS, range preview always-on)
+
+- Scene system + prefabs
 
 📜 License
 
-Not set yet. Recommended:
-
-MIT License (simple and permissive)
-
-or GPL (keeps derivatives open-source)
+MIT License
