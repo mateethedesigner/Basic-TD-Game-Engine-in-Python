@@ -77,7 +77,7 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 
-python main.py
+python main.py - Start the project
 
 ## Suggested Requirements:
 - glfw
