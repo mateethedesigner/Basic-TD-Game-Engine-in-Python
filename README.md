@@ -1,5 +1,3 @@
-# Basic-TD-Game-Engine-in-Python
-
 <div align="center">
 
   <img src="assets/logo.png" alt="logo" width="200" height="auto" />
