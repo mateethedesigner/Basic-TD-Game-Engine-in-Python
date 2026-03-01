@@ -127,7 +127,7 @@ Goal: fast level editing, pathfinding testing, tower/enemy logic, wave system â€
 ```powershell
 python -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -r requirements.txt ```
 
 Suggested requirements.txt:
 
