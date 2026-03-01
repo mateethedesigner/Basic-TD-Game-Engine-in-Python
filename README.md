@@ -156,6 +156,6 @@ If you don’t provide any PNGs, the engine generates placeholder textures autom
 
 - Scene system + prefabs
 
-📜 License
+## 📜 License
 
 MIT License
